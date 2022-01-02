@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Attributes</title>
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: tomato;
+                margin-bottom: 50px;
+            }
+            [data-display-name=”dream”] {
+                background-color: beige;
+            }
+            /* 데이터 속성값 이용 */
+            div[data-display-name=”dream”] {
+                background-color: beige;
+            }
+            /* 이때, div에만 적용이 되도록 하고 싶다면 div[data-display-name=”dream”] 
+              주의! 데이터가 모두 보이기 때문에 보안에 조심해야 하는 정보들은 DOM요소에 추가해서 보관하면 안 됨 */
+        </style>
+    </head>
+    <body>
+        <div data-index="1" data-display-name="dream"></div>
+        <div data-index="2" data-display-name="coding"></div>
+        <span data-index="3" data-display-name="”dream" "></span>
+        <script>
+            const dream = document.querySelector('div');
+            console.log(dream.dataset);
+            console.log(dream.dataset.displayName); //원하는 데이터 출력
+
+            /* 자바스크립트에서 querySelector → css에서 선택자로 쓰는 것들을   쓸 수 있음
+            첫번째 정의한 div가 나옴 */
+        </script>
+    </body>
+</html>

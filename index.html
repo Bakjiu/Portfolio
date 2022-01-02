@@ -7,12 +7,14 @@
         <title>Jiu's Portfolio</title>
         <meta name="description" content="Portfolio for software engineer Jiu">
         <meta name="author" content="Jiu">
-        <link rel="icon" type="image/png" href="Imgs/favicon.png" />
+        <link rel="icon" type="image/png" href="Imgs/favicon.png"/>
         <script
             src="<script src="https://kit.fontawesome.com/a81b1c0ad4.js" crossorigin="anonymous"></script>
         <link rel="
             preconnect" href="
-            https://fonts.googleapis.com"="https://fonts.googleapis.com"">
+            https://fonts.googleapis.com"="
+            https://fonts.googleapis.com""="https://fonts.googleapis.com"
+            "">
             <link
                 rel="preconnect"
                 href="https://fonts.gstatic.com"
@@ -20,8 +22,40 @@
             <link
                 href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
                 rel="stylesheet">
-                <link rel="stylesheet" href="style.css">
-                <script src="main.js" defer></script>
+            <link rel="stylesheet" href="style.css">
+            <script src="main.js" defer="defer"></script>
         </head>
-        <body></body>
+        <body>
+            <!-- html markup -->
+            <!-- Navbar -->
+            <nav id="navbar">
+                <!--nav태그에 고유하게 하나 있으므로 id로 지정-->
+                <div class="navbar_logo">
+                    <img
+                        style="height: 70px;
+                                width: 70px;
+                                vertical-align: middle"
+                        src="Imgs/favicon.png">
+                    <a href="#">Jiu</a>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_menu_item">Home</li>
+                    <li class="navbar_menu_item">About</li>
+                    <li class="navbar_menu_item">Skills</li>
+                    <li class="navbar_menu_item">My work</li>
+                    <li class="navbar_menu_item">Testmonials</li>
+                    <li class="navbar_menu_item">Contact</li>
+                </ul>
+            </nav>
+            <!-- About -->
+            <section id="about"></section>
+            <!-- Skills -->
+            <section id="skills"></section>
+            <!-- Work -->
+            <section id="work"></section>
+            <!-- Testmonials -->
+            <section id="testmonials"></section>
+            <!-- Contact -->
+            <section id="contact"></section>
+        </body>
     </html>
