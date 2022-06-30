@@ -1,97 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jiu's Portfolio</title>
-        <meta name="description" content="Portfolio for software engineer Jiu">
-        <meta name="author" content="Jiu">
-        <link rel="icon" type="image/png" href="Imgs/favicon.png"/>
-        <script src="https://kit.fontawesome.com/a81b1c0ad4.js" crossorigin="anonymous"></script>
-        <link rel="
-            preconnect" href="
-            https://fonts.googleapis.com"="
-            https://fonts.googleapis.com""="https://fonts.googleapis.com"
-            "">
-            <link
-                rel="preconnect"
-                href="https://fonts.gstatic.com"
-                crossorigin="crossorigin">
-            <link
-                href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-                rel="stylesheet">
-            <link rel="stylesheet" href="style.css">
-            <script src="main.js" defer="defer"></script>
-        </head>
-        <body>
-            <!-- html markup -->
-            <!-- Navbar -->
-            <nav id="navbar">
-                <!--nav태그에 고유하게 하나 있으므로 id로 지정-->
-                <div class="navbar_logo">
-                    <img
-                        style="height: 70px;
-                                width: 70px;
-                                vertical-align: middle"
-                        src="Imgs/favicon.png">
-                    <a href="#">Jiu</a>
-                </div>
-                <ul class="navbar_menu">
-                    <li class="navbar_menu_item">Home</li>
-                    <li class="navbar_menu_item">About</li>
-                    <li class="navbar_menu_item">Skills</li>
-                    <li class="navbar_menu_item">My work</li>
-                    <li class="navbar_menu_item">Testmonials</li>
-                    <li class="navbar_menu_item">Contact</li>
-                </ul>
-            </nav>
-            <!-- Home -->
-            <section id="home">
-                <img
-                    style="width: 200px; height:200px;"
-                    src="Imgs/profile.png"
-                    alt="Jiu's profile photo"
-                    class="home__avatar"/>
-                <h1 class="home__title">Hello,
-                    <br/>
-                    I'm Jiu</h1>
-                <h2 class="home__description">(creative description) Frontend developer</h2>
-                <button class="home__contact">contact me</button>
-            </section>
-            <!-- About -->
-            <section id="about">
-                <h1>About me</h1>
-                <p>I'm moving forward to become a front-end developer.
-                    <br/>
-                    I want to be a developer who can fill my own color more creatively and...(more)</p>
-                    <div class="about__majors">
-                        <div class="major">
-                        <div class="major__icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <div class="major__title">HTML</div>
-                        <div class="maajor__description">description</div>
-                     </div>
-                    </div>
-                    <div class="about__jobs">
-                        <div class="university">
-                            <img 
-                            style="width:50px; height: 50px;"
-                            src="Imgs/HYU_symbol.png" alt="Jiu's University" class="university__logo">
-                            <p class="job__name">Hanyang Universiry ERICA</p>
-                            <p class="job__period">2023/02 졸업</p>
-                        </div>
-                        <div class="job"></div>
-                    </div>
-            </section>
-            <!-- Skills -->
-            <section id="skills"></section>
-            <!-- Work -->
-            <section id="work"></section>
-            <!-- Testmonials -->
-            <section id="testmonials"></section>
-            <!-- Contact -->
-            <section id="contact"></section>
-        </body>
-    </html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiu's Portfolio</title>
+    <meta name="description" content="Portfolio for software engineer Jiu" />
+    <meta name="author" content="Jiu" />
+    <link rel="icon" type="image/png" href="Imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/a81b1c0ad4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel=" preconnect" href=" https://fonts.googleapis.com"="
+    https://fonts.googleapis.com""="https://fonts.googleapis.com" "">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer="defer"></script>
+    <!-- html파일이 parsing다 된 다음 js파일을 실행하기 때문에 굉장히 좋은 옵션-->
+  </head>
+  <body>
+    <!-- html markup -->
+    <!-- Navbar -->
+    <nav id="navbar">
+      <!--nav태그에 고유하게 하나 있으므로 id로 지정-->
+      <div class="navbar_logo">
+        <img
+          style="height: 70px; width: 70px; vertical-align: middle"
+          src="/Imgs/favicon.png"
+        />
+
+        <a href="#">Jiu</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skiils</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testmonials</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <img
+        style="width: 200px; height: 200px"
+        src="Imgs/profile.png"
+        alt="Jiu's profile photo"
+        class="home__avatar"
+      />
+      <h1 class="home__title">
+        Hello,
+        <br />
+        I'm Jiu
+      </h1>
+      <h2 class="home__description">
+        (creative description) Frontend developer
+      </h2>
+      <button class="home__contact">contact me</button>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <h1>About me</h1>
+      <p>
+        I'm moving forward to become a front-end developer.
+        <br />
+        I want to be a developer who can fill my own color more creatively
+        and...(more)
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="major__title">HTML</div>
+          <div class="maajor__description">description</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="major__title">CSS</div>
+          <div class="maajor__description">description</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="major__title">JavaScript</div>
+          <div class="maajor__description">description</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="major__title">React</div>
+          <div class="maajor__description">description</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="university">
+          <img
+            style="width: 50px; height: 50px"
+            src="Imgs/HYU_symbol.png"
+            alt="Jiu's University"
+            class="university__logo"
+          />
+          <p class="university__name">Hanyang Universiry ERICA</p>
+          <p class="university__period">2023/02 graduation</p>
+        </div>
+        <div class="job">
+          <p class="job__name">BD</p>
+          <p class="job__period">2022/07/01~2022/12/31 internship</p>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testmonials -->
+    <section id="testmonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
+</html>
