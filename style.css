@@ -5,6 +5,7 @@
 --color-light-white: #eeeeee;
 --color-dark-white: #bdbdbd;
 --color-pink: #fe918d;
+--color-dark-pink: #b0003a;
 --color-grey: #4d4d4d;
 --color-dark-grey: #616161;
 --color-light-grey: #7c7979;
@@ -22,14 +23,29 @@
 --weight-bold: 700;
 --weight-semi-blod: 600;
 --weight-regular: 400;
-  /* Size */
+/* Size */
+--size-border-radius: 4px;
 }
+
 
 /* Universal tag */
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  font-family: 'Open sans', sans-serif;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
 
+}
+ul {
+  list-style: none;
+  padding: 0
+}
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -55,4 +71,37 @@ p {
   font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex; 
+  /* box가 양쪽에 나올 수 있도록 */
+justify-content: space-between;
+/* 중심축: 수평 -> justify-content: space-between간격이 떨어져있을 수 있도록 */
+  background-color: var(--color-pink);
+  align-items: center; /* 수직 */
+  color: var(--color-white);
+  padding: 16px
+}
+.navbar__menu {
+  display: flex;
+  cursor: pointer;
+}
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: var(--size-border-radius);
+}
+.navbar_logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-blod);
+}
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+  
+}
+.navbar__menu__item:hover{
+  background-color: var(--color-dark-pink);
+  
 }
