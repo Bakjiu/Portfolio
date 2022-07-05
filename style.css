@@ -21,13 +21,13 @@
 --font-micro: 14px
   /* Font weight */
 --weight-bold: 700;
---weight-semi-blod: 600;
+--weight-semi-bold: 600;
 --weight-regular: 400;
 /* Size */
 --size-border-radius: 4px;
+/* Animation */
+--animation-duration: 300ms ;
 }
-
-
 /* Universal tag */
 * {
   box-sizing: border-box;
@@ -46,6 +46,14 @@ ul {
   list-style: none;
   padding: 0
 }
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -104,4 +112,88 @@ justify-content: space-between;
 .navbar__menu__item:hover{
   background-color: var(--color-dark-pink);
   
+}
+
+/* Home */
+#home {
+  background: url("/Imgs/homebackground.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+.home__title, .home__description{
+  color: var(--color-white)
+}
+
+.home__contact{
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  
+}
+/* Section common */
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px ;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major__icon {
+  
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 170px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  color: var(--color-blue);
+}
+.major__icon:hover i{
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+.major__icon i {
+  transition: var(--animation-duration)
+  /* 250ms~350ms: 사용자 입장에서 답답하지 않은 표준화 된 좋은 수치 */
+}
+.major__title {
+  color: var(--color-dark-grey)
+}
+.major__description {
+  font-size: all var(--font-small) ease;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.job__description {
+  margin: 0 16px;
+}
+
+.job__name{
+font-size: var(--font-small);
+}
+.job__period{
+font-size: var(--font-micro);
+color: var(--color-light-grey);
 }
