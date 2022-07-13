@@ -83,15 +83,24 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex; 
   /* box가 양쪽에 나올 수 있도록 */
 justify-content: space-between;
 /* 중심축: 수평 -> justify-content: space-between간격이 떨어져있을 수 있도록 */
-  background-color: var(--color-pink);
+  background-color: transparent;
   align-items: center; /* 수직 */
   color: var(--color-white);
   padding: 16px
 }
+
+#navbar.navbar--dark {
+  background-color: var(--color-pink);
+  padding: 8px;
+  transition: all var(--animation-duration) ease-in;
+}
+
 .navbar__menu {
   display: flex;
   cursor: pointer;
@@ -128,6 +137,7 @@ justify-content: space-between;
 #home {
   background: url("/Imgs/homebackground.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 .home__avatar {
