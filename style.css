@@ -103,6 +103,8 @@ justify-content: space-between;
   /* navbar는 무슨일이 있어도 제일 위에 있어야 하므로 z-index 값 설정*/
 }
 
+
+
 .navbar__menu {
   display: flex;
   cursor: pointer;
