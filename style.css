@@ -325,6 +325,14 @@ padding: 20px 40px;
   display: flex;
   flex-wrap: wrapping;
   justify-content: center;
+  opacity: 1;
+
+}
+
+.work__projects.anim-out{
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+  transition: all var(--animation-duration) ease;
 }
 
 .project {
@@ -336,6 +344,10 @@ padding: 20px 40px;
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__image{

@@ -6,8 +6,8 @@ const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener("scroll", () => {
-  console.log(window.scrollY);
-  console.log(`navbar height: ${navbarHeight}`);
+  // console.log(window.scrollY);
+  // console.log(`navbar height: ${navbarHeight}`);
   if (window.scrollY > navbarHeight) {
     navbar.classList.add("navbar--dark");
   } else {
@@ -59,6 +59,32 @@ arrowUpBtn.addEventListener("click", () => {
   //   behavior: "smooth",
   // });
   scrollIntoView("#home");
+});
+
+// Projects
+const workBtnContainer = document.querySelector(".work__categories");
+const projectContainer = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project");
+workBtnContainer.addEventListener("click", (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+  projectContainer.classList.add("anim-out");
+
+  setTimeout(() => {
+    projects.forEach((project) => {
+      if (filter === "*" || filter === project.dataset.type) {
+        project.classList.remove("invisible");
+      } else {
+        project.classList.add("invisible");
+      }
+    });
+    projectContainer.classList.remove("anim-out");
+  }, 300);
+  // array를 각각 하나씩 번갈아가면서
+  // for(let project of projects);
+  // for(let i = 0; i<projects.length; i++); 와 같음
 });
 
 function scrollIntoView(selector) {
