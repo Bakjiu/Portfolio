@@ -113,6 +113,7 @@ justify-content: space-between;
   padding: 8px 12px;
   margin: 0 4px;
   border-radius: var(--size-border-radius);
+  border: 1px solid var(--color-white) transparent;
   text-align: center;
 }
 .navbar_logo {
@@ -125,6 +126,7 @@ justify-content: space-between;
 } */
 .navbar__menu__item:hover{
   background-color: var(--color-dark-pink);
+  border: var(--color-white);
   
 }
 
@@ -296,7 +298,7 @@ padding: 20px 40px;
   padding: 8px 48px;
 }
 
-.category__btn.active, .category__btn:hover{
+.category__btn.selected, .category__btn:hover{
   background-color: var(--color-pink);
   color: var(--color-white);
 }

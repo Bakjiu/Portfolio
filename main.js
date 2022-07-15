@@ -70,8 +70,15 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
-  projectContainer.classList.add("anim-out");
 
+  // Remove selection from the previous item and select the new one
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  const target = e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  // click된 것이 버튼이면 그대로 쓰고, 아닐 경우 (span일 경우) span의 parentNode는 button이므로 button을 쓴다.
+  target.classList.add("selected");
+
+  projectContainer.classList.add("anim-out");
   setTimeout(() => {
     projects.forEach((project) => {
       if (filter === "*" || filter === project.dataset.type) {
