@@ -458,6 +458,26 @@ padding: 20px 40px;
   transition: all var(--animation-duration) ease-in;
 }
 
+.arrow-up-button {
+    position: fixed;
+    background-color: var(--color-pink);
+    right: 50px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: var(--color-white);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+    pointer-events: none;
+  }
+
+  .arrow-up-button.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
