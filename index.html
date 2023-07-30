@@ -8,10 +8,7 @@
     <meta name="description" content="Portfolio for software engineer Jiu" />
     <meta name="author" content="Jiu" />
     <link rel="icon" type="image/png" href="Imgs/favicon.png" />
-    <script
-      src="https://kit.fontawesome.com/a81b1c0ad4.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a81b1c0ad4.js" crossorigin="anonymous"></script>
     <link rel=" preconnect" href=" https://fonts.googleapis.com"="
     https://fonts.googleapis.com""="https://fonts.googleapis.com" "">
     <link
@@ -25,13 +22,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer="defer"></script>
-    <!-- html파일이 parsing다 된 다음 js파일을 실행하기 때문에 굉장히 좋은 옵션-->
   </head>
   <body>
     <!-- html markup -->
     <!-- Navbar -->
     <nav id="navbar">
-      <!--nav태그에 고유하게 하나 있으므로 id로 지정-->
       <div class="navbar_logo">
         <img
           style="height: 70px; width: 70px; vertical-align: middle"
@@ -44,8 +39,8 @@
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skiils</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">Testmonials</li>
+        <!-- <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testmonials</li> -->
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
       </div>
@@ -57,23 +52,23 @@
     </nav>
     <!-- Home -->
     <section id="home">
-     <div class="home__container">
-       <img
+      <div class="home__container">
+        <img
         style="width: 200px; height: 200px"
         src="Imgs/profile.png"
         alt="Jiu's profile photo"
         class="home__avatar"
-      />
+        />
       <h1 class="home__title">
         Hello,
         <br />
-        I'm Jiu
+        I'm frontend-developer Jiu
       </h1>
-      <h2 class="home__description">
+      <!-- <h2 class="home__description">
         (creative description) Frontend developer
-      </h2>
-      <button class="home__contact" data-link="#contact">contact me</button>
-     </div>
+      </h2> -->
+      <button class="home__contact" data-link="#contact">Contact Me</button>
+      </div>
     </section>
     
     <!-- About -->
@@ -83,7 +78,7 @@
         I'm moving forward to become a front-end developer.
         <br />
         I want to be a developer who can fill my own color more creatively
-        and...(more)
+        
       </p>
       <div class="about__majors">
         <div class="major">
@@ -91,28 +86,28 @@
             <i class="fab fa-html5"></i>
           </div>
           <h2 class="major__title">HTML</h2>
-          <div class="major__description">description</div>
+          <!-- <div class="major__description">description</div> -->
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-css3-alt"></i>
           </div>
           <h2 class="major__title">CSS</h2>
-          <div class="major__description">description</div>
+          <!-- <div class="major__description">description</div> -->
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-js"></i>
+            <i class="fa-brands fa-vuejs"></i>
           </div>
-          <h2 class="major__title">JavaScript</h2>
-          <div class="major__description">description</div>
+          <h2 class="major__title">Vue</h2>
+          <!-- <div class="major__description">description</div> -->
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-react"></i>
           </div>
           <h2 class="major__title">React</h2>
-          <div class="major__description">description</div>
+          <!-- <div class="major__description">description</div> -->
         </div>
       </div>
       <div class="about__jobs">
@@ -128,16 +123,28 @@
             <p class="job__period">2023/02 graduation</p>
           </div>
         </div>
-       <div class="job">
+        <div class="job">
           <img
             style="width: 50px; height: 50px"
-            src="Imgs/HYU_symbol.png"
+            src="Imgs/BD_icon-removebg-preview.png"
+            alt="Jiu's placement"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">(주)BD 현장실습</p>
+            <p class="job__period">2022/07/01~2022/12/31</p>
+          </div>
+        </div>
+        <div class="job">
+          <img
+            style="width: 50px; height: 50px"
+            src="Imgs/BD_icon-removebg-preview.png"
             alt="Jiu's University"
             class="job__logo"
           />
           <div class="job__description">
-            <p class="job__name">Hanyang Universiry ERICA</p>
-            <p class="job__period">2023/02 graduation</p>
+            <p class="job__name">(주)BD 재직</p>
+            <p class="job__period">2023/01/01~</p>
           </div>
         </div>
       </div>
@@ -147,7 +154,7 @@
       <div class="section__container">
       <h1>Skiils</h1>
       <h2>Skills & Attribute</h2>
-      <p>description</p>
+      <!-- <p>description</p> -->
       <div class="skillset">
         <div class="skillset__left">
           <h3 class="skillset__title">Skills</h3>
@@ -172,10 +179,28 @@
         <div class="skill">
             <div class="skill__description">
             <span>JavaScript</span>
-            <span>60%</span>
+            <span>70%</span>
           </div>
           <div class="skill__bar">
             <div class="skill__value "style="width: 60%"></div>
+          </div>
+        </div>
+        <div class="skill">
+            <div class="skill__description">
+            <span>TypeScript</span>
+            <span>40%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 40%"></div>
+          </div>
+        </div>
+        <div class="skill">
+            <div class="skill__description">
+            <span>Vue</span>
+            <span>60%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 60%"></div>
           </div>
         </div>
         <div class="skill">
@@ -193,12 +218,15 @@
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
               <li><span>Visual Studio Code</span></li>
+              <li><span>IntelliJ</span></li>
             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">Etc</h3>
             <ul class="etc__list">
               <li><span>Git</span></li>
+              <li><span>GitLab</span></li>
+              <li><span>Jira</span></li>
               <li><span>Notion</span></li>
               <li><span>Slack</span></li>
             </ul>
@@ -208,7 +236,7 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work" class="section">
+    <!-- <section id="work" class="section">
       <div class="section__container">
       <h1>My work</h1>
       <h3>Projects</h3>
@@ -248,9 +276,9 @@
       </a>
       </div>
       </div>
-    </section>
+    </section> -->
     <!-- Testimonials -->
-    <section id="testimonials" class="section">
+    <!-- <section id="testimonials" class="section">
       <div class="section__container">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
@@ -274,7 +302,6 @@
       </div>
       <div class="testimonials">
         <div class="testimonial">
-         
           <div class="testimonial__speech-bubble">
             <p>
 최근 출간된 지아 톨렌티노의 '트릭 미러'는 책의 뒷면을 추천사로 빼곡히 채웠다. 생각의 힘 제공
@@ -290,13 +317,13 @@
         </div>
       </div>
       </div>
-    </section>
+    </section> -->
     <!-- Contact -->
     <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">jxxwxxx@gmail.com</h2>
+      <h2 class="contact__email">jiupark25@gmail.com</h2>
       <div class="contact__links">
-        <a href="https://github.com/Bakjiu" target="_blank">
+        <a href="https://github.com/ParkJiu" target="_blank">
           <i class="fab fa-github"></i>
         </a>
         <a href="#" target="_blank">

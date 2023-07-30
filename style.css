@@ -87,8 +87,8 @@ p {
   width: 100%;
   display: flex; 
   /* box가 양쪽에 나올 수 있도록 */
-justify-content: space-between;
-/* 중심축: 수평 -> justify-content: space-between간격이 떨어져있을 수 있도록 */
+  justify-content: space-between;
+  /* 중심축: 수평 -> justify-content: space-between간격이 떨어져있을 수 있도록 */
   background-color: transparent;
   align-items: center; /* 수직 */
   color: var(--color-white);
