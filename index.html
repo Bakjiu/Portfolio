@@ -39,8 +39,8 @@
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skiils</li>
-        <!-- <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">Testmonials</li> -->
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testmonials</li> 
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
       </div>
@@ -75,40 +75,47 @@
     <section id="about" class="section section__container" >
       <h1>About me</h1>
       <p>
-        I'm moving forward to become a front-end developer.
+        구현한대로 눈에 보이는 것에 재미를 느껴 프론트엔드 개발자를 꿈꾸게 되었습니다.
         <br />
-        I want to be a developer who can fill my own color more creatively
+        치열하게 경험하고 배움을 즐길 줄 아는 프론트엔드 개발자가 되겠습니다.
         
       </p>
-      <div class="about__majors">
+      <ul class="majors">
+        <li class="major">
+          <i class="fab fa-html5 major__icon"></i>
+          <p class="major__title">Front-end</p>
+          <p>Html, CSS, JavaScript, TypeScript, React, Vue</p>
+        </li>
+        <li class="major">
+          <i class="fa-solid fa-server major__icon"></i>
+          <p class="major__title">Back-end</p>
+          <p>Java, Spring boot</p>
+        </li>
+      </ul>
+        <!-- <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+        </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-html5"></i>
           </div>
-          <h2 class="major__title">HTML</h2>
-          <!-- <div class="major__description">description</div> -->
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-css3-alt"></i>
-          </div>
-          <h2 class="major__title">CSS</h2>
-          <!-- <div class="major__description">description</div> -->
+          <h2 class="major__title">HTML/CSS</h2>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fa-brands fa-vuejs"></i>
           </div>
           <h2 class="major__title">Vue</h2>
-          <!-- <div class="major__description">description</div> -->
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-react"></i>
           </div>
           <h2 class="major__title">React</h2>
-          <!-- <div class="major__description">description</div> -->
-        </div>
+        </div> -->
       </div>
       <div class="about__jobs">
         <div class="job">
@@ -152,7 +159,7 @@
     <!-- Skills -->
     <section id="skills" class="section">
       <div class="section__container">
-      <h1>Skiils</h1>
+      <h1>Skills</h1>
       <h2>Skills & Attribute</h2>
       <!-- <p>description</p> -->
       <div class="skillset">
@@ -161,10 +168,10 @@
           <div class="skill">
             <div class="skill__description">
             <span>HTML</span>
-            <span>99%</span>
+            <span>80%</span>
           </div>
           <div class="skill__bar">
-            <div class="skill__value"></div>
+            <div class="skill__value" style="width: 80%"></div>
           </div>
         </div>
         <div class="skill">
@@ -206,12 +213,21 @@
         <div class="skill">
             <div class="skill__description">
             <span>React</span>
-            <span>40%</span>
+            <span>50%</span>
           </div>
           <div class="skill__bar">
-            <div class="skill__value" style="width: 40%"></div>
+            <div class="skill__value" style="width: 50%"></div>
           </div>
         </div>
+        <div class="skill">
+          <div class="skill__description">
+          <span>Spring boot</span>
+          <span>30%</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value" style="width: 30%"></div>
+        </div>
+      </div>
         </div>
         <div class="skillset__right">
           <div class="tools">
@@ -236,12 +252,13 @@
       </div>
     </section>
     <!-- Work -->
-    <!-- <section id="work" class="section">
+    <section id="work" class="section">
       <div class="section__container">
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn selected" data-filter="*">
+
+        <!-- <button class="category__btn selected" data-filter="*">
           All
           <span class="category__count">8</span>
         </button>
@@ -256,9 +273,9 @@
         <button class="category__btn" data-filter="React">
           React
           <span class="category__count" >8</span>
-        </button>
+        </button> -->
       </div>
-      <div class="work__projects">
+      <!-- <div class="work__projects">
         <a
           href="https://github.com/Bakjiu/Portfolio.git"
           class="project"
@@ -274,11 +291,11 @@
         </div>
       </a>
       </a>
+      </div> -->
       </div>
-      </div>
-    </section> -->
+    </section>
     <!-- Testimonials -->
-    <!-- <section id="testimonials" class="section">
+    <section id="testimonials" class="section">
       <div class="section__container">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
@@ -317,7 +334,7 @@
         </div>
       </div>
       </div>
-    </section> -->
+    </section>
     <!-- Contact -->
     <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
@@ -329,7 +346,7 @@
         <a href="#" target="_blank">
           <i class="fa fa-linkedin-square"></i>
         </a>
-        <p class="contact__rights">2022 Coder Jiu - All rights reserved</p>
+        <p class="contact__rights">2024 Coder Jiu - All rights reserved</p>
         
       </div>
       <!-- Arrow up button -->

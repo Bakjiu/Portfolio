@@ -179,33 +179,40 @@ p {
 }
 
 /* About */
-.about__majors {
+/* .about__majors {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
   align-items: center;
+} */
+.majors {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2.5rem 0;
 }
-.major__icon {
-  
-  width: 170px;
-  height: 170px;
+.major {
+  width: 30rem;
+  height: 250px;
   font-size: 70px;
-  line-height: 170px;
   border: 1px solid var(--color-blue);
-  border-radius: 50%;
-  margin-bottom: 16px;
+  border-radius: 1rem;
   color: var(--color-blue);
 }
-.major__icon:hover i{
+.major:hover .major__icon {
   color: var(--color-pink);
-  transform: rotate(-30deg) scale(1.1);
+  transform: rotate(-15deg) scale(1.1);
 }
-.major__icon i {
+.major__icon {
+  font-size: 4rem;
   transition: var(--animation-duration)
   /* 250ms~350ms: 사용자 입장에서 답답하지 않은 표준화 된 좋은 수치 */
 }
 .major__title {
-  color: var(--color-dark-grey)
+  color: var(--color-dark-grey);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .major__description {
   font-size: all var(--font-small) ease;
@@ -231,8 +238,6 @@ color: var(--color-light-grey);
 
 #skills {
   background-color: var(--color-yellow);
-  
-  
 }
 
 .skillset {
@@ -497,9 +502,6 @@ padding: 20px 40px;
   .about__majors {
     flex-direction: column ;
   }
-  .major {
-    margin: 38px;
-  }
   .skillset {
     flex-direction: column;
   }
@@ -532,7 +534,6 @@ padding: 20px 40px;
     opacity: 1;
     pointer-events: auto;
   }
-
 }
   
 /* media 768보다 작을 때 toggle-btn 표시 */
